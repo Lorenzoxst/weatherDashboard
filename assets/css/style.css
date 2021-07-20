@@ -1,0 +1,118 @@
+:root {
+    --bright-color: #E8F0F2;
+    --light-color: #A2DBFA;
+    --semi-tone: #39A2DB;
+    --dark-color: #053742;
+    --btn-color: #00d4ff;
+}
+
+body {
+    height: 100vh;
+    background:rgb(171,58,127);
+    background: linear-gradient(
+94deg
+, rgba(171,58,127,0.8799894957983193) 30%, rgba(0,212,255,0.6951155462184874) 79%, rgba(0,212,255,0.6951155462184874) 97%);
+}
+
+
+header {
+    background:rgb(171,58,127);
+    background: linear-gradient(
+94deg
+, rgba(171,58,127,0.8799894957983193) 30%, rgba(0,212,255,0.6951155462184874) 79%, rgba(0,212,255,0.6951155462184874) 97%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.content {
+    padding: 7% 3% 0;
+    display: flex;
+    height: 90vh;
+    background: #fff;
+}
+
+.search-side {
+    flex: 1 0 10%;
+    width: 10%;
+    margin-right: 5%;
+}
+
+.search-title {
+    margin-bottom: 0;
+}
+
+.search-list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.search-list li {
+    padding: 1.5% 0;
+    margin: 3% 0;
+    border-radius: 4px;
+    background: var(--bright-color);
+}
+
+.weather-side {
+    flex: 1 0 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.today-forecast {
+    padding: 0 0 1% 1%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.five-day-forecast{
+    display: flex;
+
+}
+
+.forecast-card {
+    flex: 1 0 15%;
+    width: 15%;
+    height: 100%;
+    padding: 1%;
+    margin: 1%;
+    background: var(--dark-color);
+    color: #fff;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 2px solid var(--dark-color);
+}
+
+input[type=submit] {
+    background: var(--btn-color);
+    width: 100%;
+    padding: 1.5% 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: 3s;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background:rgb(171,58,127);
+    background: linear-gradient(
+94deg
+, rgba(171,58,127,0.8799894957983193) 30%, rgba(0,212,255,0.6951155462184874) 79%, rgba(0,212,255,0.6951155462184874) 97%);
+}
